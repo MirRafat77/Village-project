@@ -48,10 +48,10 @@ GLfloat sunA=0.01f;
 void sunTR(int value){
 
     if(sunX > 40)
-        sunX=-10;
+        sunX=-7;
         sunX+=sunA;
         glutPostRedisplay();
-        glutTimerFunc(10,sunTR,0);
+        glutTimerFunc(7,sunTR,0);
 
 }
 
@@ -731,7 +731,7 @@ int main (int argc, char **argv)
     glutCreateWindow(" VILLAGE ");
 
     glutDisplayFunc(display);
-    glutTimerFunc(10,sunTR,0);
+    glutTimerFunc(7,sunTR,0);
 
     glutMainLoop();
 
